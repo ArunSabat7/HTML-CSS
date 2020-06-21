@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables/custom properties</title>
+    <style>
+        :root {
+            --pri: blue;
+            --sec: red;
+            --mwid: 200px;
+        }
+
+        .box {
+            background-color: var(--pri);
+            width: 200px;
+            height: 100px;
+            border: 2px solid var(--sec);
+            margin: 3px 10px;
+            box-shadow: 7px 8px var(--sec);
+        }
+
+        .cont {
+            display: flex;max-width: var(--mwid);
+            align-items: center;justify-content: center;
+            background-color: var(--sec);
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+
+    </div>
+</body>
+
+</html>

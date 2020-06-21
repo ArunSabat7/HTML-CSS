@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+    <style>
+        .cont {
+            display: flex;
+        }
+
+        /* box-shadow: offset-x offset-y color */
+        /* box-shadow: offset-x offset-y blur-radius color */
+        /* box-shadow: offset-x offset-y blur-radius spread radius color */
+        .card {
+            border: 2px solid tomato;
+            margin: 5px;
+            padding: 10px;
+            background-color: violet;
+            /* box-shadow: 10px 8px 10px 10px rgb(8, 156, 28); */
+            /* box-shadow: inset 10px 12px red; */
+            box-shadow: 10px 12px red, 8px 7px blue;
+        }
+        .card h3{
+            text-shadow: 4px 5px 6px greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="card" id="card1">
+            <h3>started python course</h3>
+            <p>Lorem ipsum d
+                olor sit amet consectetur adipisicing elit. Atque beatae cum voluptatum dignissimos aut! Sed molestiae,
+                delectus nihil sapiente voluptate corporis est nisi quos non quo praesentium. Dicta, illum perferendis.
+            </p>
+        </div>
+        <div class="card" id="card2">
+            <h3>started java course</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni soluta doloribus voluptas voluptatum
+            similique modi illum est id, ut, veritatis qui, voluptates aperiam itaque quasi.
+        </div>
+        <div class="card" id="card3">
+            <h3>started nodejs course</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, laborum iste. Rem
+            cupiditate non quibusdam tempore pariatur temporibus, inventore accusantium aliquid odio earum nihil totam
+            aperiam ab itaque.
+        </div>
+        <!-- <div class="card" id="card4"></div> -->
+
+    </div>
+</body>
+
+</html>

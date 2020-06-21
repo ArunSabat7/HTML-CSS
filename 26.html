@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors</title>
+    <style>
+        h3 {
+            color: rgb(22, 21, 21);
+            background-color: darkorange;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* if p is contained by li which is contained by div */
+        /* div li p {
+        color: rgba(14, 13, 13, 0.376);
+        background-color: rgba(231, 9, 58, 0.829); */
+        /* } */
+        /* if p is child of div (right inside div) than this CSS will be applied */
+        div>p {
+            color: rgba(14, 13, 13, 0.376);
+            background-color: rgba(241, 149, 169, 0.829);
+        }
+
+        /* if p is sibling of div (right outside div) than this CSS will be applied */
+        /* div + p {
+        color: rgba(14, 13, 13, 0.376);
+        background-color: rgba(231, 9, 58, 0.829);
+        } */
+    </style>
+</head>
+
+<body>
+    <h3>study more on selectors
+    </h3>
+    <div class="cont">
+        <div class="row">
+            <ul>
+                <li id="l1">
+                    <p>li para</p>
+                </li>
+            </ul>
+            <p>inner para1</p>
+        </div>
+        <p>inner para2</p>
+    </div>
+    <p>outer para</p>
+</body>
+
+</html>
